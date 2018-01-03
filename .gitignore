@@ -1,3 +1,7 @@
+# my Ignore file
+/Dockerfile
+/login.sh
+
 # Logs
 logs
 *.log
@@ -24,7 +28,7 @@ coverage
 .grunt
 
 # Bower dependency directory (https://bower.io/)
-bower_components
+/bower_components
 
 # node-waf configuration
 .lock-wscript
