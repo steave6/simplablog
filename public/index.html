@@ -25,7 +25,7 @@
 
         // Public content source (optional)
         // Defaults to fetching directly from Github
-        // source: 'https://mysite.netlify.com'
+        source: 'https://eager-cray-205aad.netlify.com'
 
       });
     </script>
@@ -37,6 +37,14 @@
 
     <!-- An editable image -->
     <img is="simpla-img" path="/section/img">
+
+    <!-- Dynamic collection -->
+    <simpla-collection path="/gallery" as="photo">
+      <template>
+        <img is="simpla-img" path="/gallery/[photo]/img">
+        <simpla-text path="/gallery/[photo]/caption"></simpla-text>
+      </template>
+    </simpla-collection>
   </body>
 </html>
 
